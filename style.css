@@ -1,0 +1,50 @@
+:root{
+    --yellow-color:#F7B236;
+    --brown-color: #AE6C1E;
+    --white-color: #FFFFFF;
+    
+    --padding: 12px;
+
+}
+body{
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.chat{
+    border: 2px solid var(--brown-color);
+    width: 50%;
+    height:50%;
+    margin:auto;
+    margin-top: 70px;
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align: center;
+}
+
+.character img{
+   width:120px;
+   height:120px;
+   margin-left: calc(var(--padding)*47);
+   margin-top:var(--padding);
+}
+
+.textbox input{
+    margin-left:calc(var(--padding)*39);
+    margin-top:calc(var(--padding)*3);
+    width: 320px;
+    border: 2px solid var(--yellow-color);
+    padding:calc(var(--padding)*1/2);
+}
+
+.clickbutton{
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    text-align:center;
+    width:160px;
+    padding: 10px 10px;
+    margin-top:calc(var(--padding)*3);
+    margin-left:43%;
+    border: 2px solid var(--yellow-color);
+    border-radius:50%;
+    display:inline-block;
+}
