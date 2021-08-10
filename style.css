@@ -1,17 +1,38 @@
 :root{
     --yellow-color:#F7B236;
-    --brown-color: #AE6C1E;
+    --lightbrown-color:#C29877;
+    --brown-color:#B87056;
     --white-color: #FFFFFF;
+    --ivory-color:#FFFFF0;
+    --black-clor:#202225;
+    --green-color:#00BE00;
+    --darkgreen-color:#346E30;
     
     --padding: 12px;
 
 }
-body{
-    font-family: 'Do Hyeon', sans-serif;
+
+.box{
+    background-color:var(--green-color);
+    border-radius:80px;
+    margin:0 30px;
+    padding: var(--padding);
+    COLOR:VAR(--white-color);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.title{
+    font-size:30px;
+    font-family: 'Fredoka One', cursive;
+}
+.chat,#textbox,#order{
+    font-family: 'Jua', sans-serif;
 }
 
 .chat{
-    border: 2px solid var(--brown-color);
+    background-color: var(--brown-color);
+    color:var(--black-color);
     width: 50%;
     height:50%;
     margin:auto;
@@ -19,32 +40,30 @@ body{
     padding-top:50px;
     padding-bottom:50px;
     text-align: center;
+    border-radius:50px;
+    font-size:18px;
 }
 
 .character img{
-   width:120px;
-   height:120px;
-   margin-left: calc(var(--padding)*47);
-   margin-top:var(--padding);
+   width:175px;
+   height:171px;
 }
 
-.textbox input{
-    margin-left:calc(var(--padding)*39);
-    margin-top:calc(var(--padding)*3);
+form input{
     width: 320px;
-    border: 2px solid var(--yellow-color);
-    padding:calc(var(--padding)*1/2);
+    border: 2px solid var(--white-color);
+    border-radius:50px;
+    padding: 10px 10px;
 }
 
-.clickbutton{
-    background-color: var(--yellow-color);
+#order{
+    background-color: var(--darkgreen-color);
     color: var(--white-color);
     text-align:center;
     width:160px;
     padding: 10px 10px;
     margin-top:calc(var(--padding)*3);
-    margin-left:43%;
-    border: 2px solid var(--yellow-color);
+    border: none;
     border-radius:50%;
     display:inline-block;
 }
